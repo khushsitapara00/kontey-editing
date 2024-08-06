@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Booking</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Customer Page -->
+    <div id="customer-page" class="page">
+        <h1>Customer Login & Booking</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="regis.html">Register here</a></p>
+        <form id="booking-form" style="display: none;">
+            <h2>Book a Slot</h2>
+            <input type="text" id="customer-name" placeholder="Your Name" required>
+            <input type="tel" id="customer-mobile" placeholder="Mobile Number" required>
+            <input type="text" id="video-duration" placeholder="Video Duration (e.g., 30 minutes)" required>
+            <input type="text" id="work-description" placeholder="Describe your video editing work" required>
+            <input type="datetime-local" id="booking-time" required>
+            <button type="submit">Book Now</button>
+            <button type="button" id="cancel-booking" style="display: none;">Cancel Booking</button>
+        </form>
+    </div>
+
+    <!-- Admin Page -->
+    <div id="admin-page" class="page" style="display: none;">
+        <h1>Admin Dashboard</h1>
+        <button id="logout">Logout</button>
+        <h2>Pending Bookings</h2>
+        <ul id="booking-list"></ul>
+        <h2>Registered Users</h2>
+        <ul id="registered-users-list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

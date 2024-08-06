@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Customer Registration</h1>
+        <form id="registration-form">
+            <input type="text" id="reg-username" placeholder="Username" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <input type="text" id="reg-city" placeholder="City" required>
+            <input type="text" id="reg-area" placeholder="Area of City" required>
+            <div>
+                <label>
+                    <input type="radio" name="gender" value="Male" required> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female" required> Female
+                </label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="index.html">Login here</a></p>
+    </div>
+    <script src="regis.js"></script>
+</body>
+</html>
